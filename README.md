@@ -37,11 +37,13 @@ Use any free tool (we recommend GitHub actions, because it very easy and fast
 to contigure, but up to you) to build a CI/CD over the service you have deployed.
 
   * On any Pull Request, a task testing the application should start, not
-    leaving to merge if the test fails. (Another task for linting is a plus)
+    allowing to merge if the test fails. (Another task for linting is a plus)
   * On merge, the service should redeploy automatically with the new changes.
 
 ## Important Notes
 
+  * We recommend to try to run the application dockerized in your computer
+    before starting the first task.
   * Right now only 2 replicas are accepted due service limits. Don't try to deploy more.
   * Keep in mind that Fargate needs to reach outside the VPC to download the
     containers from ECR. A `CannotPullContainerError` is not only a permission
