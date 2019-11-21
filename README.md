@@ -22,9 +22,10 @@ In a virtualenv, run:
 ### Deploy the service on AWS Fargate
 
    * Dockerize the service
-   * Connect to `https://travelperk-candidates.signin.aws.amazon.com/console`
-     and sing in with the credentials you got from our HR team and deploy a
-     cluster with a single service with 2 replicas of this application.
+   * Connect to https://travelperk-candidates.signin.aws.amazon.com/console
+     and sign in with the credentials you got from our HR team and deploy a
+     cluster with a single service and 2 replicas of this application (i.e. 
+     with one task definition and two running tasks).
    * We should be able to request the application using the DNS of an
      external load balancer on port 80. (443 not needed)
    * Terraform the deployment. We love AWS service, but we don't like AWS
@@ -33,27 +34,29 @@ In a virtualenv, run:
 
 ### Create a CI/CD deployment
 
-Use any free tool (we recommend GitHub actions, because it very easy and fast
-to contigure, but up to you) to build a CI/CD over the service you have deployed.
+Use any free tool (we recommend GitHub actions, because it's very easy and fast
+to configure, but up to you) to build a CI/CD over the service you have deployed.
 
-  * On any Pull Request, a task testing the application should start, not
-    allowing to merge if the test fails. (Another task for linting is a plus)
-  * On merge, the service should redeploy automatically with the new changes.
+  * Whenever a Pull Request is created, a task testing the application should 
+    start, and not allowing to merge if the test fails. (Another task for code 
+    linting is a plus).
+  * On merge, the AWS service should redeploy automatically with the new changes.
 
 ## Important Notes
 
   * We recommend to try to run the application dockerized in your computer
     before starting the first task.
-  * Right now only 2 replicas are accepted due service limits. Don't try to deploy more.
+  * Right now only 2 replicas are accepted due to service limits. Don't try to
+    deploy more.
   * Keep in mind that Fargate needs to reach outside the VPC to download the
     containers from ECR. A `CannotPullContainerError` is not only a permission
-    error. There are two ways to achieve this, both seems fine to us.
+    error. There are two ways to achieve this, both seem fine to us.
   * There is a role called `ecsTaskExecutionRole` available to be used as
     execution role of the tasks.
   * When doing the CI/CD part: DON'T PULL REQUEST OVER THE ORIGINAL REPOSITORY.
-    Is the default behavior in GitHub and will expose your work to others!
-  * For the same reason, avoid call your repo `travelperk-whatever`
-  * We are still calibrating the assessment, so if it takes more than 4 hours,
-    leave the work as it is and write down what would be your next steps. We'll
+    This is the default behavior in GitHub and it will expose your work to others!
+  * For the same reason, please avoid calling your repo `travelperk-whatever`.
+  * We are still calibrating the assessment, so if it takes more than 4 hours
+    leave the work as it is and write down what your next steps would be . We'll
     evaluate it as finished in the next interview.
-  * Many thanks for your time!
+  * Many thanks for your time and good luck!
