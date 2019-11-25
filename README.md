@@ -63,6 +63,8 @@ to configure, but up to you) to build a CI/CD over the service you have deployed
   * Local terraform state file is good enough for this exercise. Don't set a
     shared state file. Actually, you won't have permissions for it.
   * We are still calibrating the assessment, so if it takes more than 4 hours
-    leave the work as it is and write down what your next steps would be . We'll
-    evaluate it as finished in the next interview.
+    leave the work as it is and write down what your next steps would be. We'll
+    evaluate it as finished in the next interview. That doesn't mean this is a
+    speed test. If you want to spend two days or a week, up to you. But we
+    don't want you to waste your time.
   * Many thanks for your time and good luck!
