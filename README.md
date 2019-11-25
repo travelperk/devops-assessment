@@ -56,6 +56,12 @@ to configure, but up to you) to build a CI/CD over the service you have deployed
   * When doing the CI/CD part: DON'T PULL REQUEST OVER THE ORIGINAL REPOSITORY.
     This is the default behavior in GitHub and it will expose your work to others!
   * For the same reason, please avoid calling your repo `travelperk-whatever`.
+  * You can put your terraform code in the forked repository or create a new
+    one. In any case, you don't have to run CI actions on terraform code. Just
+    focus on testing application code. But you can use terraform to deploy new
+    versions of the application code if you wish so.
+  * Local terraform state file is good enough for this exercise. Don't set a
+    shared state file. Actually, you won't have permissions for it.
   * We are still calibrating the assessment, so if it takes more than 4 hours
     leave the work as it is and write down what your next steps would be . We'll
     evaluate it as finished in the next interview.
