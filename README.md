@@ -26,11 +26,9 @@ In a virtualenv, run:
      and sign in with the credentials you got from our HR team and deploy a
      cluster with a single service and 2 replicas of this application (i.e. 
      with one task definition and two running tasks).
-   * We should be able to request the application using the DNS of an
-     external load balancer on port 80. (443 not needed)
    * Terraform the deployment. Use the project [devops-assessment-terraform][1]
      as a template.  Check the instructions there to know what are your
-     permissions
+     permissions and more details about it.
 
 ### Create a CI/CD deployment
 
@@ -46,13 +44,6 @@ to configure, but up to you) to build a CI/CD over the service you have deployed
 
   * We recommend to try to run the application dockerized in your computer
     before starting the first task.
-  * Right now only 2 replicas are accepted due to service limits. Don't try to
-    deploy more.
-  * Keep in mind that Fargate needs to reach outside the VPC to download the
-    containers from ECR. A `CannotPullContainerError` is not only a permission
-    error. There are three ways to achieve this, all seem fine to us.
-  * There is a role called `ecsTaskExecutionRole` available to be used as
-    execution role of the tasks.
   * When doing the CI/CD part: DON'T PULL REQUEST OVER THE ORIGINAL REPOSITORY.
     This is the default behavior in GitHub and it will expose your work to others!
   * For the same reason, please avoid calling your repo `travelperk-whatever`.
