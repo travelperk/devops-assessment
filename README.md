@@ -28,9 +28,9 @@ In a virtualenv, run:
      with one task definition and two running tasks).
    * We should be able to request the application using the DNS of an
      external load balancer on port 80. (443 not needed)
-   * Terraform the deployment. We love AWS service, but we don't like AWS
-     console and we don't like manual work. Also, it will help us to wipe your
-     work after the assessment.
+   * Terraform the deployment. Use the project [devops-assessment-terraform][1]
+     as a template.  Check the instructions there to know what are your
+     permissions
 
 ### Create a CI/CD deployment
 
@@ -50,21 +50,16 @@ to configure, but up to you) to build a CI/CD over the service you have deployed
     deploy more.
   * Keep in mind that Fargate needs to reach outside the VPC to download the
     containers from ECR. A `CannotPullContainerError` is not only a permission
-    error. There are two ways to achieve this, both seem fine to us.
+    error. There are three ways to achieve this, all seem fine to us.
   * There is a role called `ecsTaskExecutionRole` available to be used as
     execution role of the tasks.
   * When doing the CI/CD part: DON'T PULL REQUEST OVER THE ORIGINAL REPOSITORY.
     This is the default behavior in GitHub and it will expose your work to others!
   * For the same reason, please avoid calling your repo `travelperk-whatever`.
-  * You can put your terraform code in the forked repository or create a new
-    one. In any case, you don't have to run CI actions on terraform code. Just
-    focus on testing application code. But you can use terraform to deploy new
-    versions of the application code if you wish so.
-  * Local terraform state file is good enough for this exercise. Don't set a
-    shared state file. Actually, you won't have permissions for it.
-  * We are still calibrating the assessment, so if it takes more than 4 hours
-    leave the work as it is and write down what your next steps would be. We'll
-    evaluate it as finished in the next interview. That doesn't mean this is a
-    speed test. If you want to spend two days or a week, up to you. But we
-    don't want you to waste your time.
+  * We are still calibrating the assessment, and probably you won't have time
+    to finish it. This is fine. If it takes more than 4 hours leave the work as
+    it is and write down what your next steps would be. If you want to spend
+    two days or a week, up to you. But we don't want you to waste more of you
+    time.
+  * This is not a speed test. Please don't worry if you don't finish it.
   * Many thanks for your time and good luck!
