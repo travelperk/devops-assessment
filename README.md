@@ -1,14 +1,16 @@
 # DevOps Assessment Homework
 
-This is the TravelPerk assessment homework for DevOps candidates. Please read
-this document thoroughy and don't hesitate to contact us for any doubt.
+This is TravelPerk's assessment homework for DevOps candidates. Please read
+this document thoroughly and don't hesitate to contact us if you have any doubt.
 
 ## Prepare the assessment
 
-To do this assesment follow these steps:
+To do this assessment follow these preliminary steps:
 
   * Fork this repo in your GitHub account
   * Set '[x] Require status checks to pass before merging' on master branch in Project Settings -> Branches
+  * Review the code here and ask any questions: better clearing doubts and misunderstandings early on
+  
 
 ## Run the app
 
@@ -17,7 +19,9 @@ In a virtualenv, run:
     python setup.py install
     FLASK_APP=hello flask run
 
-## Tasks
+## Tasks to complete
+
+Now you have the app running, your turn to work :) 
 
 ### Deploy the service on AWS Fargate
 
@@ -26,14 +30,15 @@ In a virtualenv, run:
      and sign in with the credentials you got from our HR team and deploy a
      cluster with a single service and 2 replicas of this application (i.e. 
      with one task definition and two running tasks).
-   * Terraform the deployment. Use the project [devops-assessment-terraform][1]
-     as a template.  Check the instructions there to know what are your
-     permissions and more details about it.
+   * Terraform the deployment. Please use this repository for references [devops-assessment-terraform][1].  
+     Check the instructions there for general info and to know what services and permissions are available.
 
 ### Create a CI/CD deployment
 
-Use any free tool (we recommend GitHub actions, because it's very easy and fast
-to configure, but up to you) to build a CI/CD over the service you have deployed.
+Use any tool you have access to (we recommend GitHub actions, because it's free, very easy and fast
+to configure... but up to you) to build a CI/CD over the service you have deployed.
+
+#### Flow:
 
   * Whenever a Pull Request is created, a task testing the application should 
     start, and not allowing to merge if the test fails. (Another task for code 
@@ -42,17 +47,19 @@ to configure, but up to you) to build a CI/CD over the service you have deployed
 
 ## Important Notes
 
-  * We recommend to try to run the application dockerized in your computer
+  * We recommend you to try to run the application dockerized locally on your computer
     before starting the first task.
-  * When doing the CI/CD part: DON'T PULL REQUEST OVER THE ORIGINAL REPOSITORY.
+  * When doing the CI/CD part: DON'T CREATE PULL REQUEST ON THE ORIGINAL REPOSITORY.
     This is the default behavior in GitHub and it will expose your work to others!
   * For the same reason, please avoid calling your repo `travelperk-whatever`.
-  * We are still calibrating the assessment, and probably you won't have time
-    to finish it. This is fine. If it takes more than 4 hours leave the work as
+  * We are still calibrating the assessment, and you may not have time
+    to finish everything in the allocated time. This is fine. If it takes more than 4 hours you can leave the work as
     it is and write down what your next steps would be. If you want to spend
     two days or a week, up to you. But we don't want you to waste more of you
     time.
-  * This is not a speed test. Please don't worry if you don't finish it.
-  * Many thanks for your time and good luck!
+  * This is not a speed test. Some people will have more experience and tooling ready, some won't. Please don't worry if 
+  you don't finish the exercise: your presentation in the office and feedback are also very valuable. 
+  
+ **Many thanks for your time and good luck!**
 
 [1]: https://github.com/travelperk/devops-assessment-terraform
