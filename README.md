@@ -21,7 +21,7 @@ In a virtualenv, run:
 
 ## Tasks to complete
 
-Now you have the app running, it's your turn to work :) 
+Now you have the app running, it's your turn to work.
 
 ### Deploy the service on AWS Fargate
 
@@ -47,7 +47,7 @@ to configure... but up to you) to build a CI/CD over the service you have deploy
 
 ## Important Notes
 
-  * We recommend you to try to run the application dockerized locally on your computer
+  * We recommend to try to run the application dockerized locally on your computer
     before starting the first task.
   * When doing the CI/CD part: DON'T CREATE PULL REQUEST ON THE ORIGINAL REPOSITORY.
     This is the default behavior in GitHub and it will expose your work to others!
@@ -57,9 +57,8 @@ to configure... but up to you) to build a CI/CD over the service you have deploy
     it is and write down what your next steps would be. If you want to spend
     two days or a week, up to you. But we don't want you to waste more of you
     time.
-  * This is not a speed test. Some people will have more experience and tooling ready, some won't. Please don't worry if 
-  you don't finish the exercise: your presentation in the office and feedback are also very valuable. 
-  
+  * This is not a speed test. Please don't worry if you don't finish it.
+
  **Many thanks for your time and good luck!**
 
 [1]: https://github.com/travelperk/devops-assessment-terraform
