@@ -25,8 +25,6 @@ In a virtualenv, run:
 
 ## Tasks to complete
 
-Now you have the app running, it's your turn to work.
-
 ### Deploy the service on AWS Fargate
 
    * Dockerize the service
