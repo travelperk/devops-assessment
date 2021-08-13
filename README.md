@@ -63,7 +63,10 @@ the service you have deployed.
     than 4 hours you can leave the work as it is and write down what your next
     steps would be. If you want to spend two days or a week, up to you. But we
     don't want you to waste more of you time.
-  * This is not a speed test. Please don't worry if you don't finish it.
+  * This is not a speed test. Please don't worry if you don't finish it. The main
+    point of the assessment is to have an overall idea on how you work, what are your
+    priorities, and to open a conversation on how you'd go further in case we wanted
+    to iterate over the exercise.
 
  **Many thanks for your time and good luck!**
 
