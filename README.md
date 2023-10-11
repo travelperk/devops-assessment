@@ -1,17 +1,19 @@
 # DevOps Assessment Homework
 
-This is TravelPerk's assessment homework for DevOps candidates. Please read
+This is TravelPerk's assessment homework for DevOps candidates.
+
+Please read
 this document thoroughly and don't hesitate to contact us to devops@travelperk.com if you have any
-doubt.
+doubts.
 
 ## Prepare the assessment
 
-To do this assessment follow these preliminary steps:
+To do this assessment please follow these preliminary steps:
 
   * Copy this repo localy and manually create a repo yourself in your GitHub
     account. DON'T FORK IT! Otherwise it will appear in the fork list and other
     candidates could copy it.
-  * Set `[x] Require status checks to pass before merging` on master branch in
+  * Set `[x] Require status checks to pass before merging` on `main` branch in
     `Project Settings -> Branches`
   * Review the code here and ask any questions: better clearing doubts and
     misunderstandings early on
